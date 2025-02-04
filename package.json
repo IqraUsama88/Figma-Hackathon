@@ -2,29 +2,39 @@
   "name": "assignment_05",
   "version": "0.1.0",
   "private": true,
-    "scripts": {
+  "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-     
+    "start": "node index.js",
+    "lint": "next lint",
+    "import-data": "node scripts/importSanityData.mjs"
   },
   "dependencies": {
     "@clerk/nextjs": "^6.8.2",
     "@radix-ui/react-dialog": "^1.1.2",
     "@radix-ui/react-dropdown-menu": "^2.1.2",
     "@radix-ui/react-slot": "^1.1.1",
+    "@reduxjs/toolkit": "^2.5.1",
+    "@sanity/client": "^6.27.2",
+    "@sanity/image-url": "^1.1.0",
+    "@sanity/vision": "^3.72.1",
+    "axios": "^1.7.9",
     "class-variance-authority": "^0.7.1",
     "clerk": "^0.8.3",
     "clsx": "^2.1.1",
+    "dotenv": "^16.4.7",
     "embla-carousel-react": "^8.5.2",
     "formik": "^2.4.6",
     "lucide-react": "^0.468.0",
     "next": "^14.2.15",
+    "next-sanity": "^9.8.47",
     "radix": "^0.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.4.0",
+    "react-redux": "^9.2.0",
+    "sanity": "^3.72.1",
+    "styled-components": "^6.1.14",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7",
     "yup": "^1.5.0"
@@ -38,6 +48,6 @@
     "gh-pages": "^6.3.0",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "typescript": "^5.7.3"
   }
 }
